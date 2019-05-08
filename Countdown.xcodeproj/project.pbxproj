@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		BD02B689228292AC003F3D78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD02B688228292AC003F3D78 /* AppDelegate.swift */; };
-		BD02B68B228292AC003F3D78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD02B68A228292AC003F3D78 /* ViewController.swift */; };
+		BD02B68B228292AC003F3D78 /* CountdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD02B68A228292AC003F3D78 /* CountdownViewController.swift */; };
 		BD02B68E228292AC003F3D78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD02B68C228292AC003F3D78 /* Main.storyboard */; };
 		BD02B690228292AD003F3D78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD02B68F228292AD003F3D78 /* Assets.xcassets */; };
 		BD02B693228292AD003F3D78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD02B691228292AD003F3D78 /* LaunchScreen.storyboard */; };
+		BD02B69B228292CD003F3D78 /* Countdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD02B69A228292CD003F3D78 /* Countdown.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BD02B685228292AC003F3D78 /* Countdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Countdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD02B688228292AC003F3D78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BD02B68A228292AC003F3D78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BD02B68A228292AC003F3D78 /* CountdownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownViewController.swift; sourceTree = "<group>"; };
 		BD02B68D228292AC003F3D78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD02B68F228292AD003F3D78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD02B692228292AD003F3D78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD02B694228292AD003F3D78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD02B69A228292CD003F3D78 /* Countdown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Countdown.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +57,9 @@
 			isa = PBXGroup;
 			children = (
 				BD02B688228292AC003F3D78 /* AppDelegate.swift */,
-				BD02B68A228292AC003F3D78 /* ViewController.swift */,
+				BD02B68A228292AC003F3D78 /* CountdownViewController.swift */,
 				BD02B68C228292AC003F3D78 /* Main.storyboard */,
+				BD02B69A228292CD003F3D78 /* Countdown.swift */,
 				BD02B68F228292AD003F3D78 /* Assets.xcassets */,
 				BD02B691228292AD003F3D78 /* LaunchScreen.storyboard */,
 				BD02B694228292AD003F3D78 /* Info.plist */,
@@ -135,8 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD02B68B228292AC003F3D78 /* ViewController.swift in Sources */,
+				BD02B68B228292AC003F3D78 /* CountdownViewController.swift in Sources */,
 				BD02B689228292AC003F3D78 /* AppDelegate.swift in Sources */,
+				BD02B69B228292CD003F3D78 /* Countdown.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
