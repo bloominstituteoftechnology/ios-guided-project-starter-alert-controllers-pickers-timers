@@ -20,7 +20,7 @@ enum CountdownState {
 }
 
 class Countdown {
-        
+    
     init() {
         timer = nil
         stopDate = nil
@@ -31,8 +31,7 @@ class Countdown {
     func start() {
         // Cancel timer before starting new timer
         cancelTimer()
-        timer = Timer.scheduledTimer(timeInterval: 0.03, target: self, selector: #selector(updateTimer(timer:)), userInfo: nil, repeats: true)
-        
+        timer = Timer.scheduledTimer(withTimeInterval: 0.03, repeats: true, block: updateTimer(timer:))
         stopDate = Date(timeIntervalSinceNow: duration)
         state = .started
     }
@@ -50,8 +49,8 @@ class Countdown {
         timer = nil
     }
     
-    @objc private func updateTimer(timer: Timer) {
-
+    private func updateTimer(timer: Timer) {
+        
         if let stopDate = stopDate {
             let currentTime = Date()
             if currentTime <= stopDate {
