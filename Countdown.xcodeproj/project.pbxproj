@@ -58,8 +58,8 @@
 			children = (
 				BD02B688228292AC003F3D78 /* AppDelegate.swift */,
 				BD02B68A228292AC003F3D78 /* CountdownViewController.swift */,
-				BD02B68C228292AC003F3D78 /* Main.storyboard */,
 				BD02B69A228292CD003F3D78 /* Countdown.swift */,
+				BD02B68C228292AC003F3D78 /* Main.storyboard */,
 				BD02B68F228292AD003F3D78 /* Assets.xcassets */,
 				BD02B691228292AD003F3D78 /* LaunchScreen.storyboard */,
 				BD02B694228292AD003F3D78 /* Info.plist */,
