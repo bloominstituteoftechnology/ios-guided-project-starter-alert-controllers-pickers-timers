@@ -56,13 +56,14 @@ class Countdown {
             if currentTime <= stopDate {
                 // Timer is active, keep counting down
                 delegate?.countdownDidUpdate(timeRemaining: timeRemaining)
-                
+                print("Time remaining: \(timeRemaining)")
             } else {
                 // Timer is finished, reset and stop counting down
                 state = .finished
                 cancelTimer()
                 self.stopDate = nil
                 delegate?.countdownDidFinish()
+                print("Finished")
             }
         }
     }
