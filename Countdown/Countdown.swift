@@ -21,6 +21,23 @@ enum CountdownState {
 
 class Countdown {
     
+    weak var delegate: CountdownDelegate?
+    var duration: TimeInterval
+    var timeRemaining: TimeInterval {
+        
+        if let stopDate = stopDate {
+            let timeRemaining = stopDate.timeIntervalSinceNow
+            return timeRemaining
+        } else {
+            return 0
+        }
+        
+    }
+    
+    private var timer: Timer?
+    private var stopDate: Date?
+    private(set) var state: CountdownState
+    
     init() {
         timer = nil
         stopDate = nil
@@ -66,21 +83,4 @@ class Countdown {
             }
         }
     }
-    
-    weak var delegate: CountdownDelegate?
-    var duration: TimeInterval
-    var timeRemaining: TimeInterval {
-        
-        if let stopDate = stopDate {
-            let timeRemaining = stopDate.timeIntervalSinceNow
-            return timeRemaining
-        } else {
-            return 0
-        }
-        
-    }
-    
-    private var timer: Timer?
-    private var stopDate: Date?
-    private(set) var state: CountdownState
 }
