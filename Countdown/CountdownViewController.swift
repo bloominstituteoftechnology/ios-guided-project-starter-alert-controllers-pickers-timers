@@ -14,6 +14,7 @@ class CountdownViewController: UIViewController {
     
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var resetButton: UIButton!
     @IBOutlet weak var countdownPicker: UIPickerView!
     
     // MARK: - Properties
@@ -52,9 +53,6 @@ class CountdownViewController: UIViewController {
     
     private func updateViews() {
         
-    }
-    
-    private func timerFinished(_ timer: Timer) {
     }
     
     private func string(from duration: TimeInterval) -> String {
