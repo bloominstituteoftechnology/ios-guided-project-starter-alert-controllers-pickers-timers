@@ -119,18 +119,18 @@ extension CountdownViewController: CountdownDelegate {
 
 extension CountdownViewController: UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-      
-        return 1
+        return countdownPickerData.count
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
      
-        return 5
+        return countdownPickerData[component].count
     }
 }
 
 extension CountdownViewController: UIPickerViewDelegate {
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return "Minute"
+        let timeValue = countdownPickerData[component][row]
+        return String(timeValue)
     }
 }
